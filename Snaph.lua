@@ -258,7 +258,7 @@ ControllerAll = false
 local ListSudos ={
 Snaph,
 Sudo_Id,
-119541395,
+1783964439,
 944353237
 }
 for k, v in pairs(ListSudos) do
@@ -279,7 +279,7 @@ Managers = Redis:sismember(Snaph.."SOFI:Managers:"..ChatId,UserId)
 Admin = Redis:sismember(Snaph.."SOFI:Admins:"..ChatId,UserId)
 VipMem = Redis:sismember(Snaph.."SOFI:VipMem:"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 119541395 then
+if UserId == 1783964439 then
 Status = 'مطـور السـورس'
 elseif UserId == 944353237 then  
 Status = 'مطـور السـورس'
@@ -889,7 +889,7 @@ Managers = Redis:sismember(Snaph.."SOFI:Managers:"..ChatId,UserId)
 Admin = Redis:sismember(Snaph.."SOFI:Admins:"..ChatId,UserId)
 VipMem = Redis:sismember(Snaph.."SOFI:VipMem:"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 119541395 then
+if UserId == 1783964439 then
 Status = true
 elseif UserId == 944353237 then  
 Status = true
@@ -1061,7 +1061,7 @@ end
 else
 StatusMember = "QnkgQWhtZWRBeWFk"
 end
-if tonumber(UserId) == 119541395 then
+if tonumber(UserId) == 1783964439 then
 ay.The_Controller = 1
 ay.Name_Controller = 'مطـور السـورس'
 elseif tonumber(UserId) == 944353237 then
@@ -6723,7 +6723,7 @@ return LuaTele.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender_id.user_id,"�
 end
 end
 if TextMsg == "اضف فلوس للمطور الاساسي" or TextMsg == "اضف فلوس" then
-if msg.sender_id.user_id ~= 119541395 then
+if msg.sender_id.user_id ~= 1783964439 then
 return LuaTele.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender_id.user_id,'⌯︙هذا الامر يخص ↫ مطور السورس فقط .\n•-› X').Warning,"md",true)  
 end
 if Redis:get(Snaph.."add:money") then
@@ -7095,7 +7095,7 @@ return LuaTele.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender_id.user_id,'�
 end
 end
 if TextMsg == "اضف فلوس للمطور الاساسي" or TextMsg == "اضف فلوس" then
-if msg.sender_id.user_id ~= 119541395 then
+if msg.sender_id.user_id ~= 1783964439 then
 return LuaTele.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender_id.user_id,'⌯︙هذا الامر يخص ↫ مطور السورس فقط .\n•-› X').Warning,"md",true)  
 end
 if not Redis:get(Snaph.."add:money") then
@@ -11611,7 +11611,7 @@ return LuaTele.sendText(msg.chat_id,msg.id,"\n⌯︙عذرا هذا المستخ
 end
 local UserInfo = LuaTele.getUser(Message_Reply.sender_id.user_id)
 local name = "["..UserInfo.first_name.."](tg://user?id="..UserInfo.id..")"
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(119541395) then 
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(1783964439) then 
 LuaTele.sendText(msg.chat_id,msg.id, 'دروح عمي روح لا ضحك العالم عليك لا تندك بمطور السورس😏🔥', 'md')  
 return false  
 end  
@@ -11645,7 +11645,7 @@ local username = (text:match('^هينه @(.*)') or text:match('^هينها @(.*)
 local UserId_Info = LuaTele.searchPublicChat(username)
 local UserInfo = LuaTele.getUser(UserId_Info.id)
 local name = "["..UserInfo.first_name.."](tg://user?id="..UserInfo.id..")"
-if tonumber(UserId_Info.id) == tonumber(119541395) then 
+if tonumber(UserId_Info.id) == tonumber(1783964439) then 
 LuaTele.sendText(msg.chat_id,msg.id, 'دروح عمي روح لا ضحك العالم عليك لا تندك بمطور السورس😏🔥', 'md')  
 return false  
 end  
@@ -11678,7 +11678,7 @@ if text and (text:match('^هينه (%d+)$') or text:match('^هينها (%d+)$'))
 local UserId = (text:match('^هينه (%d+)$') or text:match('^هينها (%d+)$'))
 local UserInfo = LuaTele.getUser(UserId)
 local name = "["..UserInfo.first_name.."](tg://user?id="..UserInfo.id..")"
-if tonumber(UserInfo.id) == tonumber(119541395) then 
+if tonumber(UserInfo.id) == tonumber(1783964439) then 
 LuaTele.sendText(msg.chat_id,msg.id, 'دروح عمي روح لا ضحك العالم عليك لا تندك بمطور السورس😏🔥', 'md')  
 return false  
 end  
@@ -11719,7 +11719,7 @@ if tonumber(Message_Reply.sender_id.user_id) == tonumber(Snaph) then
 LuaTele.sendText(msg.chat_id,msg.id, 'فهمنيي شلوون راحح ابوس نفسيي؟😶💔', 'md') 
 return false  
 end  
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(119541395) then  
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(1783964439) then  
 LuaTele.sendText(msg.chat_id,msg.reply_to_message_id, 'امصه مص مو بس ابوسه هذا مواححح 👅 💋', 'html')
 return false
 end 
@@ -11740,7 +11740,7 @@ if tonumber(UserId) == tonumber(Snaph) then
 LuaTele.sendText(msg.chat_id,msg.id, 'فهمنيي شلوون راحح ابوس نفسيي؟😶💔', 'md') 
 return false  
 end  
-if tonumber(UserId) == tonumber(119541395) then  
+if tonumber(UserId) == tonumber(1783964439) then  
 LuaTele.sendText(msg.chat_id,msg.id, 'امصه مص مو بس ابوسه هذا مواححح 👅 💋', 'html')
 return false
 end 
@@ -11762,7 +11762,7 @@ if tonumber(UserId_Info.id) == tonumber(Snaph) then
 LuaTele.sendText(msg.chat_id,msg.id, 'فهمنيي شلوون راحح ابوس نفسيي؟😶💔', 'md') 
 return false  
 end  
-if tonumber(UserId_Info.id) == tonumber(119541395) then  
+if tonumber(UserId_Info.id) == tonumber(1783964439) then  
 LuaTele.sendText(msg.chat_id,msg.id, 'امصه مص مو بس ابوسه هذا مواححح 👅 💋', 'html')
 return false
 end 
@@ -11787,7 +11787,7 @@ if tonumber(Message_Reply.sender_id.user_id) == tonumber(Snaph) then
 LuaTele.sendText(msg.chat_id,msg.id, 'فهمنيي شلوون راحح اصيح نفسيي؟😶💔', 'md') 
 return false  
 end  
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(119541395) then  
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(1783964439) then  
 LuaTele.sendText(msg.chat_id,msg.reply_to_message_id, 'تعال مطوريي محتاجيكك🏃🏻‍♂️♥️', 'html')
 return false
 end 
@@ -11808,7 +11808,7 @@ if tonumber(UserInfo.id) == tonumber(Snaph) then
 LuaTele.sendText(msg.chat_id,msg.id, 'فهمنيي شلوون راحح اصيح نفسيي؟😶💔', 'md') 
 return false  
 end  
-if tonumber(UserInfo.id) == tonumber(119541395) then  
+if tonumber(UserInfo.id) == tonumber(1783964439) then  
 LuaTele.sendText(msg.chat_id,msg.id, 'تعال مطوريي محتاجيكك🏃🏻‍♂️♥️', 'html')
 return false
 end 
@@ -11831,7 +11831,7 @@ if tonumber(UserInfo.id) == tonumber(Snaph) then
 LuaTele.sendText(msg.chat_id,msg.id, 'فهمنيي شلوون راحح اصيح نفسيي؟😶💔', 'md') 
 return false  
 end  
-if tonumber(UserInfo.id) == tonumber(119541395) then  
+if tonumber(UserInfo.id) == tonumber(1783964439) then  
 LuaTele.sendText(msg.chat_id,nil, 'تعال '..namesudo..' محتاجيكك🏃🏻‍♂️♥️', 'md')
 return false
 end 
@@ -17337,7 +17337,7 @@ data = {
 },
 }
 }
-return LuaTele.sendText(msg.chat_id,msg.id,"[Dev SOFI](tg://user?id=119541395)","md",true, false, false, true, reply_markup)
+return LuaTele.sendText(msg.chat_id,msg.id,"[Dev SOFI](tg://user?id=1783964439)","md",true, false, false, true, reply_markup)
 end
 if text == '↫ حذف كليشه ستارت ⌯' and ChCheck(msg) then 
 if not msg.SecondSudo then 
@@ -18830,7 +18830,7 @@ LuaTele.sendText(msg.chat_id,msg_id,"⌯︙الحساب محذوف","md",true)
 return false  
 end
 local Text ='⌯︙قم باستعمال الازرار لرفع العضو ↫ ⤈\n⌯︙العضو ↫ ['..UserInfo.first_name..'](t.me/'..(UserInfo.username or 'SrcDrg')..')\n•-› ✓'
-if tonumber(IdUser) == tonumber(119541395) then
+if tonumber(IdUser) == tonumber(1783964439) then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 {{text="• رفع مميز •",data=IdUser..":SetMem:"..UserInfo.id},{text="• رفع ادمن •",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="• رفع منشئ •",data=IdUser..":SetConstructor:"..UserInfo.id},{text="• رفع مدير •",data=IdUser..":SetManager:"..UserInfo.id}},{{text="• رفع منشئ اساسي •",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="• رفع مالك •",data=IdUser..":SetOwner:"..UserInfo.id},{text="• رفع مطور •",data=IdUser..":SetSudoBot:"..UserInfo.id}},{{text="• رفع مطور ثانوي •",data=IdUser..":SetSecondSudo:"..UserInfo.id}},{{text='• سـوࢪس دࢪاڪـون •',url="t.me/SrcDrg"}},
 }}
@@ -19004,7 +19004,7 @@ LuaTele.sendText(msg.chat_id,msg_id,"⌯︙الحساب محذوف","md",true)
 return false  
 end
 local Text ='⌯︙قم باستعمال الازرار لتنزيل العضو ↫ ⤈\n⌯︙العضو ↫ ['..UserInfo.first_name..'](t.me/'..(UserInfo.username or 'SrcDrg')..')\n•-› X'
-if tonumber(IdUser) == tonumber(119541395) then
+if tonumber(IdUser) == tonumber(1783964439) then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 {{text="• تنزيل مميز •",data=IdUser..":RemMem:"..UserInfo.id},{text="• تنزيل ادمن •",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="• تنزيل منشئ •",data=IdUser..":RemConstructor:"..UserInfo.id},{text="• تنزيل مدير •",data=IdUser..":RemManager:"..UserInfo.id}},{{text="• تنزيل منشئ اساسي •",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="• تنزيل مالك •",data=IdUser..":RemOwner:"..UserInfo.id},{text="• تنزيل مطور •",data=IdUser..":RemSudoBot:"..UserInfo.id}},{{text="• تنزيل مطور ثانوي •",data=IdUser..":RemSecondSudo:"..UserInfo.id}},{{text='• سـوࢪس دࢪاڪـون •',url="t.me/SrcDrg"}},
 }}
